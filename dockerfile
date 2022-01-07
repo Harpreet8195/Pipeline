@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page273/sp
 WORKDIR /var/www/html
 RUN unzip spourmo.zip
 RUN cp -rvf spourmo/* .
-RUN rm -rf _MACOSX spourmo spourmo.zip
+RUN rm -rf spourmo spourmo.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
