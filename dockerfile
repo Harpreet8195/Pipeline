@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip spourmo.zip
 RUN cp -rvf spourmo/* .
 RUN rm -rf spourmo spourmo.zip
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD [" /usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
